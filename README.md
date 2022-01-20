@@ -6,13 +6,27 @@ This Terraform script wil set up:
 - A Service Account on the database
 - A Private Link resource
 
-To run:
+Make sure to check the variables in `astra-database/variables.tf` before running Terraform.
+
+Before running Terraform, set your Application Token from the Astra DB Dashoard:
+```sh
+export ASTRA_API_TOKEN=<your-token>
+```
+
+To run Terraform in order to create the database:
 ```sh
 cd astra-database
 terraform init
 teraform plan
 terraform apply
 ```
+
+Upon succesful completion, Terraform will output the following variables for your convenience:
+- Astra Database ID
+- Astra Organization ID
+- Secure Connect Bundle URL
+- Service Account (Client ID, Client Secret and Token)
+- Private Link ServiceName
 
 # Link your Astra DB to AWS using Private Link
 
