@@ -12,7 +12,7 @@ terraform {
 
 // Create a service account role
 resource "astra_role" "rw-svc-account" {
-  role_name   = format("%s-sa", var.name)
+  role_name   = "rw-svc-account"
   description = "RW Service Account"
   effect      = "allow"
   resources   = var.astra_organization_id
