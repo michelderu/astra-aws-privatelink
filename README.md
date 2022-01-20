@@ -1,6 +1,20 @@
-# Set up DataStax Astra with an AWS PrivateLink through Terraform
+# DataStax Astra through Terraform
 
-## Run the terraform 
+## Run terraform to create the Astra database
+This Terraform script wil set up:
+- An Astra database
+- A Service Account on the database
+- A Private Link resource
+
+To run:
+```sh
+cd astra-database
+terraform init
+teraform plan
+terraform apply
+```
+
+# Link your Astra DB to AWS using Private Link
 
 ## Get the latest aws cli
 ```sh
@@ -17,5 +31,3 @@ The following information is needed:
 Create a new user at https://console.aws.amazon.com/iam and note the Access Key ID and Secret Access Key
 ### Region and output format
 In my case I'll use `eu-central-1` and `json`
-
-## 
