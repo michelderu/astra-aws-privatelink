@@ -29,6 +29,6 @@ output "token" {
 }
 
 // Output the service name to be used in AWS
-output "servicename" {
-  value = module.privatelink.servicename
+output "service_name" {
+  value = module.privatelink.service_name
 }

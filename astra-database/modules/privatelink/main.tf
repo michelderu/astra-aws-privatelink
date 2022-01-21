@@ -11,8 +11,8 @@ terraform {
 }
 
 // Create a private link resource
-resource "astra_private_link" "dev" {
+resource "astra_private_link" "link" {
   allowed_principals = var.allowed_principals
-  database_id        = var.datacenter_id
-  datacenter_id      = var.datacenter_id
+  database_id        = var.database_id
+  datacenter_id      = var.database_id
 }

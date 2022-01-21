@@ -11,7 +11,7 @@ terraform {
 }
 
 // Create the database and initial keyspace
-resource "astra_database" "dev" {
+resource "astra_database" "db" {
   name           = var.database_name
   keyspace       = var.keyspace
   cloud_provider = var.cloud_provider
@@ -19,6 +19,6 @@ resource "astra_database" "dev" {
 }
 
 // Get the location of the secure connect bundle
-data "astra_secure_connect_bundle_url" "dev" {
-  database_id = astra_database.dev.id
+data "astra_secure_connect_bundle_url" "db" {
+  database_id = astra_database.db.id
 }

@@ -3,7 +3,7 @@ variable "allowed_principals" {
   type        = list
 }
 
-variable "datacenter_id" {
-  description = "Datacenter ID for which to create the private link resource"
+variable "database_id" {
+  description = "Database ID for which to create the private link resource"
   type        = string
 }
