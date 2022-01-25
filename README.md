@@ -36,6 +36,8 @@ Upon succesful completion, Terraform will output the following variables for you
 # Link your Astra DB to AWS using Private Link
 In this step, you'll set up the Private Endpoint on AWS and link it to Astra.
 
+For reference, have a look at the awesome video: https://www.youtube.com/watch?v=xJfmgO8TGek
+
 ## Set up the endpoint
 1. Create a new endpoint
 2. Search for the private service name (take this from the output from Terraform above)
