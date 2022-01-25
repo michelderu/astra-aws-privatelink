@@ -14,5 +14,5 @@ terraform {
 resource "astra_private_link" "link" {
   allowed_principals = var.allowed_principals
   database_id        = var.database_id
-  datacenter_id      = var.database_id
+  datacenter_id      = "${var.database_id}-1"
 }

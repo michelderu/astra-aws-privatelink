@@ -14,21 +14,21 @@ output "secure_connect_bundle_url" {
 }
 
 // Output the created client_id
-output "client_id" {
+output "service_account_client_id" {
   value = module.iam.client_id
 }
 
 // Output the created secret
-output "secret" {
+output "service_account_secret" {
   value = module.iam.secret
 }
 
 // Output the created token
-output "token" {
+output "service_account_token" {
   value = module.iam.token
 }
 
 // Output the service name to be used in AWS
-output "service_name" {
+output "private_service_name" {
   value = module.privatelink.service_name
 }

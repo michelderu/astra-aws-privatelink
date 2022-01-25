@@ -4,6 +4,6 @@ variable "database_id" {
 }
 
 variable "endpoint_id" {
-  description = "Private Endpoint ID"
+  description = "rivate Endpoint ID"
   type        = string
 }
